@@ -1,27 +1,27 @@
 <html>
 <head>
-   <title>Zendesk Engineering</title>
-   <link href="/css/reset.css" rel="stylesheet" type="text/css" />
-
-   <style>
-     body {
-       background:#000;
-       font-family: Helvetica Neue, Arial, sans-serif;
-       margin: 0px;
-     }
-     
-     img.box {
-       margin-top: 80px;
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-       border: 10px solid #fff;
-     }
-   </style>
- </head>
+  <!-- 384x512 -->
+  <title>Zendesk Engineering</title>
+  <style type="text/css">
+  body { background:#000; font-family: Helvetica Neue, Arial, sans-serif; margin: 0px; padding-top: 100px;}
+  .slideshow { margin-left: auto; margin-right: auto; }
+  .slideshow img { padding: 15px; border: 1px solid #ccc; background-color: #eee; width: 384px; height: 512px; }
+  </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('.slideshow').cycle({
+      fx: 'fade',
+      speed: 6000
+    });
+  });
+  </script>
+</head>
 <body>
-  <div class="box">
-    <img class="box" src="./images/mick.png">
+  <div class="slideshow">
+    <img src="./images/mick.png" />
+    <img src="./images/eric.png" />
   </div>
 </body>
 </html>
